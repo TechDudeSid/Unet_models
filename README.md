@@ -92,6 +92,8 @@ The project utilized the Mississippi State University's offroad dataset, consist
 
 **Example Segmentation Results:**
 
+**Training and Validation Loss:**
+
 ![Training and Validation Loss](images/loss.png)
 
 **Training and Validation Accuracy:**
@@ -102,5 +104,4 @@ The project utilized the Mississippi State University's offroad dataset, consist
 - The U-Net model implementation is adapted from the [original paper](https://arxiv.org/abs/1505.04597) by Olaf Ronneberger, Philipp Fischer, and Thomas Brox.
 - This project utilizes the Keras deep learning library and OpenCV for image processing.
 
-### License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
