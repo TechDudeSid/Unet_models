@@ -62,7 +62,7 @@ The U-Net model used in this project is a convolutional neural network designed 
 Here are some example segmentation results along with the corresponding directional guidance:
 
 **Results**
-![Results](Unet_models/images/resuts.png)
+![Results](images)
 
 
 
