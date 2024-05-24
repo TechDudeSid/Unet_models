@@ -13,7 +13,7 @@ This repository contains scripts for real-time image segmentation using a pre-tr
 - `Camera based prediction.py`: Script for capturing real-time frames from a webcam, segmenting the images, and determining directional guidance based on object position.
 - `Image Browse and predict.py`: Script for selecting an image file, performing segmentation, and displaying the results along with directional guidance.
 - `multi_unet_model.py`: Script defining the multi-class U-Net model used for segmentation.
-- `MixedField_V2.hdf5`: Pre-trained weights for the U-Net model.
+- `MixedField_V2.hdf5`: Pre-trained weights for the U-Net model which was trained using [Mississippi State University's Dataset](https://www.cavs.msstate.edu/resources/autonomous_dataset.php).
 
 ## Requirements
 - Python 3.x
@@ -67,8 +67,6 @@ Here are some example segmentation results along with the corresponding directio
 
 
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 - The U-Net model implementation is adapted from the [original paper](https://arxiv.org/abs/1505.04597) by Olaf Ronneberger, Philipp Fischer, and Thomas Brox.
