@@ -45,16 +45,16 @@ Path segmentation is crucial for autonomous off-road vehicles as it helps in und
 
 #### Real-Time Segmentation from Webcam
 1. Ensure your webcam is connected.
-2. Run the `Camera based prediction.py` script:
+2. Run the `Camera_based_prediction.py` script:
     ```sh
-    python Camera\ based\ prediction.py
+    python Camera_based_prediction.py
     ```
 3. The script will capture frames from the webcam, perform segmentation, and print "turn Left" or "turn Right" based on the position of the segmented path.
 
 #### Segmentation from Selected Image Files
-1. Run the `Image Browse and predict.py` script:
+1. Run the `Image_Browse_and_predict.py` script:
     ```sh
-    python Image\ Browse\ and\ predict.py
+    python Image_Browse_and_predict.py
     ```
 2. A file dialog will appear. Select an image file to process.
 3. The script will display the original image, the segmentation result, and the directional guidance (left or right).
@@ -75,6 +75,32 @@ Here are some example segmentation results along with the corresponding directio
 
 ![Results](images/results.png)
 
+### Design and Implementation of U-Net for Offroad Navigation
+
+This research work focuses on addressing the logistical obstacles encountered when delivering supplies to deep forest and off-road trails. The proposed solution involves an autonomous off-road delivery rover equipped with a U-Net-based navigation and obstacle avoidance system. This system ensures timely delivery of medical supplies to remote areas.
+
+The U-Net architecture, designed for semantic segmentation tasks, has been adapted to improve the rover's navigation capabilities. The project's key innovations include the integration of U-Net for path detection and obstacle avoidance, which significantly enhances the rover's ability to autonomously navigate through rough terrain.
+
+#### Methodology
+- **Semantic Segmentation:** U-Net segments each pixel in an image into categories such as road, vegetation, obstacles, and sky.
+- **Feature Extraction:** The contracting path of U-Net extracts high-level features from the input image, critical for understanding terrain elements and detecting obstacles.
+- **Accurate Localization:** The expanding path of U-Net aids in precise localization of objects within the segmented image.
+- **Real-time Processing:** U-Net's computational efficiency allows for real-time processing, enhancing the rover's responsiveness in dynamic environments.
+
+#### Results and Discussions
+The project utilized the Mississippi State University's offroad dataset, consisting of 140 pairs of images and their corresponding masks. The images were resized to 256x256 pixels and normalized for efficient processing. Despite achieving a training accuracy of 97%, the model's initial testing accuracy was 79%, indicating room for improvement.
+
+**Example Segmentation Results:**
+
+![Training and Validation Loss](images/loss.png)
+
+**Training and Validation Accuracy:**
+
+![Training and Validation Accuracy](images/accuracy.png)
+
 ### Acknowledgements
 - The U-Net model implementation is adapted from the [original paper](https://arxiv.org/abs/1505.04597) by Olaf Ronneberger, Philipp Fischer, and Thomas Brox.
 - This project utilizes the Keras deep learning library and OpenCV for image processing.
+
+### License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
