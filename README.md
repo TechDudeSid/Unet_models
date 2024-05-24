@@ -58,7 +58,7 @@ This repository contains scripts for real-time image segmentation using a pre-tr
 ## Model Details
 The U-Net model used in this project is a convolutional neural network designed for biomedical image segmentation. It uses pre-trained weights loaded from `MixedField_V2.hdf5`. The model architecture is defined in the `multi_unet_model.py` script, which builds a multi-class U-Net model with customizable input dimensions and number of classes.
 
-### Example Results
+### Results
 Here are some example segmentation results along with the corresponding directional guidance:
 
 **Results**
